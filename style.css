@@ -1,0 +1,117 @@
+html, body {
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+}
+
+.centered-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    flex-basis: 100%;
+    padding: 0;
+}
+
+.card-image-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.card-content {
+    padding: 20px 30px;
+}
+
+.card-content > h1 {
+    font-size: 2.9em;
+}
+
+.attribution {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.attribution > p {
+    font-size: 1.5em;
+}
+
+.txt-gray {
+    color: gray;
+}
+
+.txt-bold {
+    font-weight: 900;
+}
+
+.txt-old-price {
+    color: gray;
+    text-decoration: line-through;
+    font-size: 0.5em;
+}
+
+.buy > h2 {
+    color: hsl(158, 45%, 37%);
+    font-size: 2.3em;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3em;
+    padding: 0.8em;
+    border: none;
+}
+
+button:hover {
+    background-color: hsl(158, 20%, 37%);
+}
+
+@media (max-width: 400px) {
+    html, body {
+        padding: 50px;
+    }
+  .centered-card {
+     margin-top: min(10vh, 100px);
+     flex-direction: column;
+     width: 80vw;
+     height: auto;
+   }
+
+    .card-image {
+        height: 200px;
+    }
+
+    .card-content {
+        padding: 10px 15px;
+    }
+
+    .card-content > h1 {
+        font-size: 1.9em;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
